@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO核心配置 -->
+    <title>China Travel Hub | AI-Powered China Travel Guide 2026</title>
+    <meta name="description" content="Free AI China travel planner, visa guides, city itineraries, and travel tips for foreigners visiting China. Plan your perfect trip to China with Chinahub.travel.">
+    <meta name="keywords" content="China travel guide, AI China itinerary, China visa for foreigners, Beijing travel, Shanghai travel, China tourist tips">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 海外字体/样式 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        :root {
+            --primary: #2563eb;
+            --secondary: #0ea5e9;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        body {
+            color: var(--dark);
+            background: var(--light);
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 顶部广告位 (Google AdSense 728x90) */
+        .top-ad {
+            background: #f1f5f9;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            color: var(--gray);
+            font-size: 14px;
+        }
+        /* 导航栏 */
+        nav {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .nav-links a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: var(--secondary);
+        }
+        /* 英雄区 */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(to right, #eff6ff, #f0f9ff);
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero p {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        /* 核心功能区 */
+        .features {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .feature-card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+            color: var(--primary);
+        }
+        .feature-card p {
+            color: var(--gray);
+        }
+        /* 热门目的地 */
+        .destinations {
+            padding: 60px 0;
+            background: white;
+        }
+        .dest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .dest-card {
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .dest-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .dest-card h4 {
+            padding: 10px;
+            font-weight: 600;
+        }
+        /* 中间广告位 (300x250) */
+        .mid-ad {
+            text-align: center;
+            padding: 30px 0;
+            background: #f8fafc;
+            margin: 40px 0;
+            color: var(--gray);
+        }
+        /* 订阅区 */
+        .newsletter {
+            padding: 60px 0;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+        .newsletter input {
+            padding: 12px 20px;
+            width: 300px;
+            max-width: 100%;
+            border-radius: 6px;
+            border: none;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        /* 页脚 */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .footer-col a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .copyright {
+            text-align: center;
+            color: #94a3b8;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+        /* GDPR 弹窗 */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            z-index: 1000;
+        }
+        .cookie-banner p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部广告位 (替换为你的AdSense代码) -->
+    <div class="top-ad">Advertisement - Google AdSense</div>
+
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container nav-wrap">
+            <a href="#" class="logo">chinahub.travel</a>
+            <div class="nav-links">
+                <a href="#ai-planner">AI Planner</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#guides">Travel Guides</a>
+                <a href="#visa">Visa Info</a>
+            </div>
+            <a href="#ai-planner" class="btn">Start AI Planning</a>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your AI-Powered China Travel Guide</h1>
+            <p>Free custom itineraries, visa help, local tips, and expert advice for foreigners traveling to China. Plan your dream trip in 1 click!</p>
+            <div class="hero-buttons">
+                <a href="#ai-planner" class="btn">Generate Free AI Itinerary</a>
+                <a href="#guides" class="btn btn-secondary">Browse Travel Guides</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI核心功能 -->
+    <section class="features" id="ai-planner">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Travel Tools for Your China Trip</h2>
+                <p>Smart, free, and designed exclusively for international visitors</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>AI Trip Planner</h3>
+                    <p>Enter your travel days, budget, and interests → get a fully customized China itinerary.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI Travel Assistant</h3>
+                    <p>Ask any question about visas, transport, food, or attractions – get instant answers.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>City Travel Guides</h3>
+                    <p>Free, up-to-date guides for Beijing, Shanghai, Xi'an, Chengdu and top China cities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门目的地 -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top China Destinations</h2>
+                <p>Explore the most popular cities for international tourists</p>
+            </div>
+            <div class="dest-grid">
+                <div class="dest-card"><h4>Beijing</h4></div>
+                <div class="dest-card"><h4>Shanghai</h4></div>
+                <div class="dest-card"><h4>Xi'an</h4></div>
+                <div class="dest-card"><h4>Chengdu</h4></div>
+                <div class="dest-card"><h4>Guilin</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 中间广告位 -->
+    <div class="mid-ad">Advertisement - Google AdSense</div>
+
+    <!-- 实用攻略 -->
+    <section class="features" id="guides">
+        <div class="container">
+            <div class="section-title">
+                <h2>Essential Travel Resources</h2>
+                <p>Everything you need to know before visiting China</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" id="visa">
+                    <h3>China Visa Guide</h3>
+                    <p>Complete guide for tourist visas, application steps, and free tips for foreigners.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Transport in China</h3>
+                    <p>High-speed trains, metro, buses, and ride-hailing apps for tourists.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Internet & eSIM</h3>
+                    <p>Stay connected in China with affordable eSIM and portable Wi-Fi solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 邮件订阅 -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Free China Travel Tips</h2>
+            <p>Subscribe for exclusive guides, latest travel policies, and AI itinerary updates</p>
+            <div style="margin-top:20px">
+                <input type="email" placeholder="Your Email Address">
+                <button class="btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (合规必备) -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#ai-planner">AI Planner</a>
+                    <a href="#destinations">Destinations</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#">Travel Blog</a>
+                    <a href="#">Visa Help</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 chinahub.travel | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <!-- GDPR Cookie 弹窗 -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>We use cookies to improve your experience and show personalized ads. By continuing, you agree to our Privacy Policy.</p>
+        <button class="btn" onclick="document.getElementById('cookieBanner').style.display='none'">Accept</button>
+    </div>
+
+</body>
+</html>
