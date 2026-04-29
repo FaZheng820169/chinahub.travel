@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Français] ChinaHub.travel - The Ultimate Guide to Travel in China</title>
+    <meta name="description" content="Complete guide for traveling to China: Visa requirements, Alipay/WeChat setup, VPNs, high-speed rail, and best destinations for global tourists.">
+    <link rel="canonical" href="https://chinahub.travel/">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../common.css">
+
+    </head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-primary flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                ChinaHub
+            </a>
+            <div class="hidden xl:flex xl:space-x-6 items-center font-medium text-[var(--text-secondary)] text-base whitespace-nowrap">
+                <a href="visa-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Visa Guide</a>
+                <a href="payment-apps.html" class="hover:text-[var(--primary-main)] transition-colors">Payments &amp; Apps</a>
+                <a href="vpn-internet.html" class="hover:text-[var(--primary-main)] transition-colors">Internet &amp; VPN</a>
+                <a href="about.html" class="hover:text-[var(--primary-main)] transition-colors">Culture</a>
+                <a href="survival-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Survival Guide</a>
+                <a href="faq.html" class="hover:text-[var(--primary-main)] transition-colors">FAQ &amp; Scams</a>
+                <a href="contact.html" class="hover:text-[var(--primary-main)] transition-colors">Contact</a>
+            </div>
+            <a href="visa-guide.html" class="hidden xl:block whitespace-nowrap bg-primary hover-bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-red-500/30">
+                Plan Your Trip
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="relative group ml-4 hidden xl:block">
+                <button class="flex items-center gap-1 text-[var(--text-secondary)] hover:text-primary transition-colors font-bold tracking-wide">
+                    🌐 EN <span class="text-xs">▼</span>
+                </button>
+                <div class="absolute right-0 mt-4 w-36 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all pt-2 pb-2">
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇬🇧 English</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇪🇸 Español</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇫🇷 Français</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇨🇳 中文</a>
+                </div>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="xl:hidden text-2xl text-[var(--text-primary)] relative z-50 transition-colors w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-3xl hidden flex-col pt-28 px-6 xl:hidden overflow-y-auto pb-12 transition-all">
+        <div class="flex flex-col gap-6 reveal-up">
+            <a href="visa-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Visa Guide</a>
+                <a href="payment-apps.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Payments &amp; Apps</a>
+                <a href="vpn-internet.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Internet &amp; VPN</a>
+                <a href="about.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Culture</a>
+                <a href="survival-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Survival Guide</a>
+                <a href="faq.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">FAQ &amp; Scams</a>
+                <a href="contact.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Contact</a>
+            <a href="visa-guide.html" class="block w-full text-center mt-6 bg-primary text-white py-4 rounded-2xl text-xl font-bold hover:bg-red-800 shadow-xl shadow-red-500/20 active:scale-95 transition-transform">Plan Your Trip</a>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-100/50 reveal-up" style="animation-delay: 100ms;">
+            <p class="text-sm text-[var(--text-secondary)] mb-4 font-bold uppercase tracking-widest">Languages</p>
+            <div class="grid grid-cols-2 gap-3">
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇬🇧 EN</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇪🇸 ES</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇫🇷 FR</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇨🇳 ZH</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Hero Section -->
+    <header class="relative h-screen min-h-[700px] flex items-center justify-center pt-20">
+        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Great Wall of China" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/1920x1080/FAFAFA/1A1A1A?text=China+Landscape'">
+        <div class="absolute inset-0 bg-black/40"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <span class="inline-block py-1 px-3 rounded-full glass-card text-white text-sm font-semibold tracking-wider uppercase mb-6">
+                Updated for 2026
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-lg font-serif"><span>[Français] </span>
+                Unlock the Wonders of <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">China</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-100 mb-10 font-light max-w-2xl mx-auto drop-shadow">
+                Your premium guide to navigating visas, payments, internet, and breathtaking destinations. Designed for the modern global traveler.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#essential-guides" class="bg-primary hover-bg-primary-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-transform hover:-translate-y-1 shadow-xl">
+                    Explore Guides
+                </a>
+                <a href="visa-guide.html" class="glass-card text-white hover:bg-white/20 px-8 py-4 rounded-full font-semibold text-lg transition-transform hover:-translate-y-1">
+                    Check Visa Exemption
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Affiliate / Sponsor Banner (Subtle) -->
+    <div class="bg-[var(--text-primary)] text-white py-4">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 text-sm font-semibold uppercase tracking-widest">
+            <span>🌍 144-Hour Visa Free</span>
+            <span>📱 Stay Connected with eSIM</span>
+            <span>💳 Alipay &amp; WeChat Ready</span>
+            <span>🚄 High-Speed Rail</span>
+        </div>
+    </div>
+
+    <!-- Essential Guides (Pillar Pages) -->
+    <section id="essential-guides" class="py-24 bg-[var(--bg-main)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-[48px] font-extrabold text-[var(--text-primary)] mb-4 tracking-tight font-serif"><span>[Français] </span>Essential Travel Pillars</h2>
+                <p class="text-[18px] text-[var(--text-secondary)] max-w-2xl mx-auto">Master the logistics of traveling in China before you arrive. Everything you need to know, simplified.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <a href="visa-guide.html" class="group bg-white rounded-2xl overflow-hidden hover-lift transition-transform border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="China Visa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/800x600'">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">STEP 1</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-[24px] font-bold text-[var(--text-primary)] mb-3">Visa &amp; Entry Policies</h3>
+                        <p class="text-[var(--text-secondary)] mb-6 line-clamp-3">Navigate the 144-hour visa-free transit, tourist (L) visas, and entry requirements for 2026. See if your passport qualifies.</p>
+                        <span class="text-primary font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Read Guide <span class="ml-2">→</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Pillar 2 -->
+                <a href="payment-apps.html" class="group bg-white rounded-2xl overflow-hidden hover-lift transition-transform border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Mobile Payments" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/800x600'">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">STEP 2</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-[24px] font-bold text-[var(--text-primary)] mb-3">Payments &amp; Apps</h3>
+                        <p class="text-[var(--text-secondary)] mb-6 line-clamp-3">China is cashless. Learn how to link your foreign credit card to Alipay and WeChat Pay, plus essential apps to download.</p>
+                        <span class="text-primary font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Read Guide <span class="ml-2">→</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Pillar 3 -->
+                <a href="vpn-internet.html" class="group bg-white rounded-2xl overflow-hidden hover-lift transition-transform border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Internet in China" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/800x600'">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">STEP 3</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-[24px] font-bold text-[var(--text-primary)] mb-3">Internet &amp; Connectivity</h3>
+                        <p class="text-[var(--text-secondary)] mb-6 line-clamp-3">Stay connected with Google, WhatsApp, and Instagram. Find the best eSIMs and working VPNs for your trip to China.</p>
+                        <span class="text-primary font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Read Guide <span class="ml-2">→</span>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Magazine Featured Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl md:text-[48px] font-extrabold text-[var(--text-primary)] mb-4 tracking-tight font-serif"><span>[Français] </span>Discover the Impossible</h2>
+                    <p class="text-[18px] text-[var(--text-secondary)]">From cyberpunk megacities to ancient misty mountains, China offers contrasts found nowhere else on Earth.</p>
+                </div>
+                <a href="about.html" class="mt-6 md:mt-0 text-primary font-semibold border-b-2 border-primary pb-1 hover:text-[var(--primary-dark)] transition-colors">Explore Destinations</a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+                <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Shanghai Skyline" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://placehold.co/800x800'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-white/80 text-sm font-semibold tracking-wider uppercase">Metropolis</span>
+                        <h3 class="text-3xl font-bold text-white mt-2">Shanghai</h3>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2 relative group overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Beijing Forbidden City" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://placehold.co/800x400'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <span class="text-white/80 text-sm font-semibold tracking-wider uppercase">Imperial History</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Beijing</h3>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1583248352195-d3a8e766edf2?q=80&amp;w=400&amp;auto=format&amp;fit=crop" alt="Chengdu Pandas" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5">
+                        <h3 class="text-xl font-bold text-white">Chengdu</h3>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1518749877395-5dbd6d9a1177?q=80&amp;w=400&amp;auto=format&amp;fit=crop" alt="Guilin Landscapes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5">
+                        <h3 class="text-xl font-bold text-white">Guilin</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--text-primary)] text-white pt-20 pb-10 mt-auto border-t-[8px] border-primary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-white flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                        ChinaHub
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        The ultimate premium travel resource for global adventurers exploring China. Independent, accurate, and up-to-date for 2026.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Essential Guides</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="visa-guide.html" class="hover:text-primary transition-colors">Visa Exemption &amp; Policies</a></li>
+                        <li><a href="payment-apps.html" class="hover:text-primary transition-colors">Alipay &amp; WeChat Setup</a></li>
+                        <li><a href="vpn-internet.html" class="hover:text-primary transition-colors">Best VPNs for China</a></li>
+                        <li><a href="transport-guide.html" class="hover:text-primary transition-colors">High-Speed Rail Guide</a></li>
+                        <li><a href="survival-guide.html" class="hover:text-primary transition-colors">Ultimate Survival Guide</a></li>
+                        <li><a href="faq.html" class="hover:text-primary transition-colors">FAQ &amp; Scams</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Discover</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">Culture &amp; Etiquette</a></li>
+                        <li><a href="about.html#destinations" class="hover:text-primary transition-colors">Top Destinations</a></li>
+                        <li><a href="about.html#food" class="hover:text-primary transition-colors">Culinary Journey</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Legal &amp; Compliance</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="privacy-policy.html" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html" class="hover:text-primary transition-colors">Cookie Policy</a></li>
+                        <li><a href="terms-of-service.html" class="hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>© 2026 ChinaHub.travel. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for Global Travelers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Navbar scroll effect script -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('py-4');
+                nav.classList.add('py-2');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.remove('py-2');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+
+    <!-- Smooth Scroll & Reveal Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add reveal classes to major sections
+            document.querySelectorAll('section, article h2, article h3, article p, .grid > div').forEach((el, index) => {
+                if(!el.classList.contains('reveal-up') && !el.classList.contains('reveal-fade')) {
+                    el.classList.add('reveal-up');
+                }
+            });
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up, .reveal-fade').forEach((element) => {
+                observer.observe(element);
+            });
+            
+            // Header fade in immediately
+            setTimeout(() => {
+                document.querySelectorAll('header.reveal-fade, header .reveal-up').forEach(el => el.classList.add('is-visible'));
+            }, 100);
+        });
+    </script>
+
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        mobileMenu.classList.add('flex');
+                        mobileBtn.innerHTML = '✕';
+                        mobileBtn.classList.add('text-primary');
+                        document.body.style.overflow = 'hidden'; // 防止背景滚动
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex');
+                        mobileBtn.innerHTML = '☰';
+                        mobileBtn.classList.remove('text-primary');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body></html>

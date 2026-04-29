@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap');
+
+@layer base {
+  :root {
+      /* Color System based on Premium Redesign Plan */
+      --primary-main: #B91C1C;
+      --primary-dark: #991B1B;
+      --primary-light: #7F1D1D;
+      
+      --bg-main: #FAFAFA;
+      --bg-card: #FFFFFF;
+      
+      --text-primary: #111827;
+      --text-secondary: #4B5563;
+      
+      --func-info: #2563EB;
+      --func-success: #10B981;
+      --func-warning: #F59E0B;
+  }
+
+  body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-primary);
+      background-color: var(--bg-main);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Typography Customization */
+  h1, h2, h3, h4, h5, h6, .font-serif {
+      font-family: 'Playfair Display', serif;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+  }
+
+  /* Base font sizes */
+  h1 { font-size: 48px; font-weight: 800; }
+  h2 { font-size: 36px; font-weight: 800; }
+  h3 { font-size: 24px; font-weight: 600; }
+}
+
+@layer components {
+  /* Custom Utilities that extend Tailwind */
+  .text-primary { color: var(--primary-main); }
+  .bg-primary { background-color: var(--primary-main); }
+  .hover-bg-primary-dark:hover { background-color: var(--primary-dark); }
+  .border-primary { border-color: var(--primary-main); }
+
+  /* Glassmorphism Components */
+  .glass-card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+  }
+
+  /* Premium Animations */
+  .transition-transform {
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 48px -12px rgba(0,0,0,0.15);
+  }
+
+  /* Scroll Reveal Animations */
+  .reveal-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-up.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .reveal-fade {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+  }
+  .reveal-fade.is-visible {
+      opacity: 1;
+  }
+
+  /* AdSense Placeholder Styles */
+  .ad-slot-horizontal {
+      min-height: 90px;
+      background: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      position: relative;
+      border-radius: 8px;
+      border: 1px dashed #cbd5e1;
+  }
+
+  .ad-slot-horizontal::before {
+      content: "Advertisement";
+      font-size: 11px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: absolute;
+      top: -18px;
+      left: 0;
+  }
+}
+
+@layer utilities {
+  @keyframes scale-in {
+    0% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+}

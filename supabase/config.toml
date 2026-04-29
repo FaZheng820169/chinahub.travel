@@ -1,0 +1,12 @@
+
+[functions.send-subscriber-notification]
+enabled = true
+verify_jwt = true
+import_map = "./functions/send-subscriber-notification/deno.json"
+entrypoint = "./functions/send-subscriber-notification/index.ts"
+
+[functions.send-contact-email]
+enabled = true
+verify_jwt = false
+import_map = "./functions/send-contact-email/deno.json"
+entrypoint = "./functions/send-contact-email/index.ts"

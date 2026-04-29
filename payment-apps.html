@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments & Apps in China: Alipay, WeChat & More | ChinaHub.travel</title>
+    <meta name="description" content="China is a cashless society. Learn how to set up Alipay and WeChat Pay with foreign credit cards, and discover essential apps for your trip.">
+    <link rel="canonical" href="https://chinahub.travel/payment-apps.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="common.css">
+
+    </head>
+<body class="antialiased flex flex-col min-h-screen bg-[var(--bg-main)]">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-primary flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                ChinaHub
+            </a>
+            <div class="hidden xl:flex xl:space-x-6 items-center font-medium text-[var(--text-secondary)] text-base whitespace-nowrap">
+                <a href="visa-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Visa Guide</a>
+                <a href="payment-apps.html" class="text-[var(--primary-main)] transition-colors">Payments & Apps</a>
+                <a href="vpn-internet.html" class="hover:text-[var(--primary-main)] transition-colors">Internet & VPN</a>
+                <a href="about.html" class="hover:text-[var(--primary-main)] transition-colors">Culture</a>
+                <a href="survival-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Survival Guide</a>
+                <a href="faq.html" class="hover:text-[var(--primary-main)] transition-colors">FAQ & Scams</a>
+                <a href="contact.html" class="hover:text-[var(--primary-main)] transition-colors">Contact</a>
+            </div>
+            <a href="visa-guide.html" class="hidden xl:block whitespace-nowrap bg-primary hover-bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold transition-colors">
+                Plan Your Trip
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="relative group ml-4 hidden xl:block">
+                <button class="flex items-center gap-1 text-[var(--text-secondary)] hover:text-primary transition-colors font-bold tracking-wide">
+                    🌐 EN <span class="text-xs">▼</span>
+                </button>
+                <div class="absolute right-0 mt-4 w-36 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all pt-2 pb-2">
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇬🇧 English</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇪🇸 Español</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇫🇷 Français</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇨🇳 中文</a>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="xl:hidden text-2xl text-[var(--text-primary)] relative z-50 transition-colors w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-3xl hidden flex-col pt-28 px-6 xl:hidden overflow-y-auto pb-12 transition-all">
+        <div class="flex flex-col gap-6 reveal-up">
+            <a href="visa-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Visa Guide</a>
+                <a href="payment-apps.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Payments & Apps</a>
+                <a href="vpn-internet.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Internet & VPN</a>
+                <a href="about.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Culture</a>
+                <a href="survival-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Survival Guide</a>
+                <a href="faq.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">FAQ & Scams</a>
+                <a href="contact.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Contact</a>
+            <a href="visa-guide.html" class="block w-full text-center mt-6 bg-primary text-white py-4 rounded-2xl text-xl font-bold hover:bg-red-800 shadow-xl shadow-red-500/20 active:scale-95 transition-transform">Plan Your Trip</a>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-100/50 reveal-up" style="animation-delay: 100ms;">
+            <p class="text-sm text-[var(--text-secondary)] mb-4 font-bold uppercase tracking-widest">Languages</p>
+            <div class="grid grid-cols-2 gap-3">
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇬🇧 EN</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇪🇸 ES</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇫🇷 FR</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇨🇳 ZH</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-16 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Step 2: Logistics</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-[var(--text-primary)] mb-6 tracking-tight font-serif">Surviving Cashless China</h1>
+            <p class="text-xl text-[var(--text-secondary)]">Cash is rarely used. Visa and Mastercard are rarely accepted directly. Setting up Alipay and WeChat Pay is mandatory for a smooth trip.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow">
+        
+        <!-- AdSense Horizontal Slot -->
+        <div class="ad-slot-horizontal w-full"></div>
+
+        <article class="prose prose-lg max-w-none mt-12 text-[var(--text-secondary)] leading-relaxed">
+            
+            <h2 class="text-3xl font-bold text-[var(--text-primary)] mb-6">The Big Two: Alipay & WeChat Pay</h2>
+            <p class="mb-6">China operates almost entirely on QR codes. Whether you're buying a high-speed rail ticket, a bottle of water at a convenience store, or renting a bike, you will use your phone to pay.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-lift transition-transform">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-4">A</div>
+                    <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-3 m-0">Alipay (支付宝)</h3>
+                    <p class="text-sm mb-4">The most tourist-friendly app. It allows you to link international Visa, Mastercard, JCB, and Discover cards natively.</p>
+                    <ul class="text-sm space-y-2 list-none p-0">
+                        <li class="flex items-center gap-2">✅ Easy verification for foreigners</li>
+                        <li class="flex items-center gap-2">✅ Built-in translation tool</li>
+                        <li class="flex items-center gap-2">✅ Integrated DiDi (ride-hailing)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-lift transition-transform">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-4">W</div>
+                    <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-3 m-0">WeChat (微信)</h3>
+                    <p class="text-sm mb-4">The "super app". Essential for communicating with locals, guides, and scanning mini-programs at restaurants.</p>
+                    <ul class="text-sm space-y-2 list-none p-0">
+                        <li class="flex items-center gap-2">✅ Essential for messaging</li>
+                        <li class="flex items-center gap-2">✅ Restaurant ordering menus</li>
+                        <li class="flex items-center gap-2">⚠️ Stricter foreign card limits</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pre-Travel Requirement Highlight -->
+            <div class="bg-red-50 border-l-4 border-primary p-6 rounded-r-lg mb-12">
+                <h4 class="text-lg font-bold text-red-900 mb-2">Crucial Tip: Set up BEFORE you arrive</h4>
+                <p class="text-red-800 m-0">Download, register, and link your credit cards while you are still in your home country. You will need to receive an SMS verification code, which is much easier to do on your home network.</p>
+            </div>
+            
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg mb-12">
+                <h4 class="text-lg font-bold text-yellow-900 mb-2">The 200 RMB Rule (Foreign Credit Cards)</h4>
+                <p class="text-yellow-800 m-0">Both Alipay and WeChat Pay allow you to link foreign Visa/Mastercard. Transactions under 200 RMB (approx. $28 USD) are completely <strong>fee-free</strong>. For single transactions over 200 RMB, a 3% transaction fee is applied by the apps.</p>
+            </div>
+
+            <h2 class="text-3xl font-bold text-[var(--text-primary)] mb-6">Other Essential Apps</h2>
+            <div class="space-y-6 mb-12">
+                <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100">
+                    <div class="w-12 h-12 flex-shrink-0 bg-gray-100 rounded-lg flex items-center justify-center text-xl">🗺️</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-[var(--text-primary)] m-0">Apple Maps / Amap (高德地图)</h4>
+                        <p class="text-sm text-gray-600 m-0 mt-1">Google Maps is outdated and inaccurate in China. Use Apple Maps (works great without VPN) or Amap (if you can read some Chinese).</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100">
+                    <div class="w-12 h-12 flex-shrink-0 bg-blue-100 rounded-lg flex items-center justify-center text-xl">🚄</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-[var(--text-primary)] m-0">Trip.com</h4>
+                        <p class="text-sm text-gray-600 m-0 mt-1">The easiest app in English to book high-speed trains, domestic flights, and hotels that explicitly accept foreigners.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100">
+                    <div class="w-12 h-12 flex-shrink-0 bg-orange-100 rounded-lg flex items-center justify-center text-xl">🚕</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-[var(--text-primary)] m-0">DiDi (滴滴出行)</h4>
+                        <p class="text-sm text-gray-600 m-0 mt-1">China's Uber. You don't even need to download the standalone app—it is built directly into Alipay as a Mini Program and comes with an English interface and automatic translation with the driver.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100">
+                    <div class="w-12 h-12 flex-shrink-0 bg-purple-100 rounded-lg flex items-center justify-center text-xl">🗣️</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-[var(--text-primary)] m-0">DeepL / Baidu Translate</h4>
+                        <p class="text-sm text-gray-600 m-0 mt-1">Essential for reading menus and communicating. <em>Pro Tip: Google Translate app's basic text translation actually works in China without a VPN!</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Affiliate Highlight Card: eSIM -->
+            <div class="relative overflow-hidden rounded-2xl bg-black text-white p-8 md:p-10 my-12 hover-lift transition-transform">
+                <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-blue-600/40 to-transparent"></div>
+                <div class="relative z-10">
+                    <span class="inline-block px-3 py-1 bg-blue-600 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Sponsor / Recommended</span>
+                    <h3 class="text-3xl font-bold mb-4 mt-0 text-white">Don't get stranded without data</h3>
+                    <p class="text-gray-300 max-w-md mb-8">Alipay and WeChat Pay require an active internet connection to generate payment QR codes. Install an eSIM before you fly.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="bg-white text-black px-8 py-3 rounded-xl font-bold text-center hover:bg-gray-100 transition-colors">
+                            Get Airalo eSIM <span class="text-blue-600">- 10% Off</span>
+                        </a>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-6">* Links may earn us a small commission.</p>
+                </div>
+            </div>
+
+            <!-- AdSense Horizontal Slot -->
+            <div class="ad-slot-horizontal w-full"></div>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--text-primary)] text-white pt-20 pb-10 mt-auto border-t-[8px] border-primary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-white flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                        ChinaHub
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        The ultimate premium travel resource for global adventurers exploring China. Independent, accurate, and up-to-date for 2026.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Essential Guides</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="visa-guide.html" class="hover:text-primary transition-colors">Visa Exemption & Policies</a></li>
+                        <li><a href="payment-apps.html" class="hover:text-primary transition-colors">Alipay & WeChat Setup</a></li>
+                        <li><a href="vpn-internet.html" class="hover:text-primary transition-colors">Best VPNs for China</a></li>
+                        <li><a href="transport-guide.html" class="hover:text-primary transition-colors">High-Speed Rail Guide</a></li>
+                        <li><a href="survival-guide.html" class="hover:text-primary transition-colors">Ultimate Survival Guide</a></li>
+                        <li><a href="faq.html" class="hover:text-primary transition-colors">FAQ & Scams</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Discover</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">Culture & Etiquette</a></li>
+                        <li><a href="about.html#destinations" class="hover:text-primary transition-colors">Top Destinations</a></li>
+                        <li><a href="about.html#food" class="hover:text-primary transition-colors">Culinary Journey</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Legal & Compliance</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="privacy-policy.html" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html" class="hover:text-primary transition-colors">Cookie Policy</a></li>
+                        <li><a href="terms-of-service.html" class="hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 ChinaHub.travel. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for Global Travelers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll & Reveal Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add reveal classes to major sections
+            document.querySelectorAll('section, article h2, article h3, article p, .grid > div').forEach((el, index) => {
+                if(!el.classList.contains('reveal-up') && !el.classList.contains('reveal-fade')) {
+                    el.classList.add('reveal-up');
+                }
+            });
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up, .reveal-fade').forEach((element) => {
+                observer.observe(element);
+            });
+            
+            // Header fade in immediately
+            setTimeout(() => {
+                document.querySelectorAll('header.reveal-fade, header .reveal-up').forEach(el => el.classList.add('is-visible'));
+            }, 100);
+        });
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        mobileMenu.classList.add('flex');
+                        mobileBtn.innerHTML = '✕';
+                        mobileBtn.classList.add('text-primary');
+                        document.body.style.overflow = 'hidden'; // 防止背景滚动
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex');
+                        mobileBtn.innerHTML = '☰';
+                        mobileBtn.classList.remove('text-primary');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

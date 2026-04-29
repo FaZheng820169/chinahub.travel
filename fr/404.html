@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Français] 404 Not Found - ChinaHub.travel</title>
+    <meta name="description" content="The page you are looking for does not exist.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../common.css">
+
+    </head>
+<body class="antialiased flex flex-col min-h-screen bg-[var(--bg-main)]">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-nav shadow-md py-2 bg-white/90" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-primary flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                ChinaHub
+            </a>
+            <div class="hidden xl:flex xl:space-x-6 items-center font-medium text-[var(--text-secondary)] text-base whitespace-nowrap">
+                <a href="visa-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Visa Guide</a>
+                <a href="payment-apps.html" class="hover:text-[var(--primary-main)] transition-colors">Payments &amp; Apps</a>
+                <a href="vpn-internet.html" class="hover:text-[var(--primary-main)] transition-colors">Internet &amp; VPN</a>
+                <a href="about.html" class="hover:text-[var(--primary-main)] transition-colors">Culture</a>
+                <a href="survival-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Survival Guide</a>
+                <a href="faq.html" class="hover:text-[var(--primary-main)] transition-colors">FAQ &amp; Scams</a>
+                <a href="contact.html" class="hover:text-[var(--primary-main)] transition-colors">Contact</a>
+            </div>
+            <a href="visa-guide.html" class="hidden xl:block whitespace-nowrap bg-primary hover-bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-red-500/30">
+                Plan Your Trip
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="relative group ml-4 hidden xl:block">
+                <button class="flex items-center gap-1 text-[var(--text-secondary)] hover:text-primary transition-colors font-bold tracking-wide">
+                    🌐 EN <span class="text-xs">▼</span>
+                </button>
+                <div class="absolute right-0 mt-4 w-36 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all pt-2 pb-2">
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇬🇧 English</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇪🇸 Español</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇫🇷 Français</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇨🇳 中文</a>
+                </div>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="xl:hidden text-2xl text-[var(--text-primary)] relative z-50 transition-colors w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-3xl hidden flex-col pt-28 px-6 xl:hidden overflow-y-auto pb-12 transition-all">
+        <div class="flex flex-col gap-6 reveal-up">
+            <a href="visa-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Visa Guide</a>
+                <a href="payment-apps.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Payments &amp; Apps</a>
+                <a href="vpn-internet.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Internet &amp; VPN</a>
+                <a href="about.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Culture</a>
+                <a href="survival-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Survival Guide</a>
+                <a href="faq.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">FAQ &amp; Scams</a>
+                <a href="contact.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Contact</a>
+            <a href="visa-guide.html" class="block w-full text-center mt-6 bg-primary text-white py-4 rounded-2xl text-xl font-bold hover:bg-red-800 shadow-xl shadow-red-500/20 active:scale-95 transition-transform">Plan Your Trip</a>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-100/50 reveal-up" style="animation-delay: 100ms;">
+            <p class="text-sm text-[var(--text-secondary)] mb-4 font-bold uppercase tracking-widest">Languages</p>
+            <div class="grid grid-cols-2 gap-3">
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇬🇧 EN</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇪🇸 ES</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇫🇷 FR</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇨🇳 ZH</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- 404 Content -->
+    <main class="flex-grow flex items-center justify-center pt-24 pb-16 px-6">
+        <div class="text-center max-w-2xl reveal-up">
+            <h1 class="text-9xl font-extrabold text-gray-200 mb-4 font-serif"><span>[Français] </span>404</h1>
+            <h2 class="text-4xl font-bold text-[var(--text-primary)] mb-6"><span>[Français] </span>Lost in Translation?</h2>
+            <p class="text-lg text-[var(--text-secondary)] mb-10">
+                The page you're looking for seems to have wandered off. Let's get you back on the right path.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="bg-primary hover-bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-transform hover:-translate-y-1 shadow-lg">
+                    Return to Homepage
+                </a>
+                <a href="faq.html" class="bg-white border-2 border-gray-200 hover:border-primary hover:text-primary text-[var(--text-secondary)] px-8 py-3 rounded-full font-semibold transition-all">
+                    Visit FAQ
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--text-primary)] text-white pt-20 pb-10 mt-auto border-t-[8px] border-primary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-white flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                        ChinaHub
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        The ultimate premium travel resource for global adventurers exploring China. Independent, accurate, and up-to-date for 2026.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Essential Guides</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="visa-guide.html" class="hover:text-primary transition-colors">Visa Exemption &amp; Policies</a></li>
+                        <li><a href="payment-apps.html" class="hover:text-primary transition-colors">Alipay &amp; WeChat Setup</a></li>
+                        <li><a href="vpn-internet.html" class="hover:text-primary transition-colors">Best VPNs for China</a></li>
+                        <li><a href="transport-guide.html" class="hover:text-primary transition-colors">High-Speed Rail Guide</a></li>
+                        <li><a href="survival-guide.html" class="hover:text-primary transition-colors">Ultimate Survival Guide</a></li>
+                        <li><a href="faq.html" class="hover:text-primary transition-colors">FAQ &amp; Scams</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Discover</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">Culture &amp; Etiquette</a></li>
+                        <li><a href="about.html#destinations" class="hover:text-primary transition-colors">Top Destinations</a></li>
+                        <li><a href="about.html#food" class="hover:text-primary transition-colors">Culinary Journey</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Legal &amp; Compliance</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="privacy-policy.html" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html" class="hover:text-primary transition-colors">Cookie Policy</a></li>
+                        <li><a href="terms-of-service.html" class="hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>© 2026 ChinaHub.travel. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for Global Travelers</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.reveal-up').forEach((el) => {
+                setTimeout(() => el.classList.add('is-visible'), 100);
+            });
+        });
+    </script>
+
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        mobileMenu.classList.add('flex');
+                        mobileBtn.innerHTML = '✕';
+                        mobileBtn.classList.add('text-primary');
+                        document.body.style.overflow = 'hidden'; // 防止背景滚动
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex');
+                        mobileBtn.innerHTML = '☰';
+                        mobileBtn.classList.remove('text-primary');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body></html>

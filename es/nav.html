@@ -1,0 +1,34 @@
+<!-- 统一导航栏 HTML - 所有页面使用 -->
+<nav>
+    <div class="nav-wrap">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">C</div>
+            ChinaHub.travel
+        </a>
+        <div class="nav-links">
+            <a href="about-china.html">关于去中国</a>
+            <a href="about.html">关于中国</a>
+            <a href="survival-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Survival Guide</a>
+                <a href="contact.html">联系我们</a>
+        </div>
+        <a href="index.html" class="btn">返回首页</a>
+    </div>
+</nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-3xl hidden flex-col pt-28 px-6 xl:hidden overflow-y-auto pb-12 transition-all">
+        <div class="flex flex-col gap-6 reveal-up">
+            
+            
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-100/50 reveal-up" style="animation-delay: 100ms;">
+            <p class="text-sm text-[var(--text-secondary)] mb-4 font-bold uppercase tracking-widest">Languages</p>
+            <div class="grid grid-cols-2 gap-3">
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇬🇧 EN</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇪🇸 ES</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇫🇷 FR</a>
+                <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="p-3 bg-gray-50/80 backdrop-blur rounded-xl text-center font-semibold border border-gray-100 hover:border-primary/30 hover:bg-primary/5 transition-colors">🇨🇳 ZH</a>
+            </div>
+        </div>
+    </div>
+    
