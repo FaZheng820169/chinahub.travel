@@ -44,7 +44,7 @@ export default async function handler(req, res) {
         'Authorization': `Bearer ${RESEND_API_KEY}`
       },
       body: JSON.stringify({
-        from: 'ChinaHub Contact <notify@resend.dev>',
+        from: 'ChinaHub Contact <onboarding@resend.dev>',
         to: [ADMIN_EMAIL],
         reply_to: email,
         subject: `[Contact] ${subject || 'New Message from ' + name}`,
