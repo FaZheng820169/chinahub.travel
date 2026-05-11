@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China World Heritage Sites Guide | ChinaHub.travel</title>
+    <meta name="description" content="Discover China's 56 UNESCO World Heritage Sites, from the Great Wall and Forbidden City to Terracotta Warriors and more.">
+    <link rel="canonical" href="https://chinahub.travel/heritage-sites.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1289715571389865" crossorigin="anonymous"></script>
+
+    </head>
+<body class="antialiased flex flex-col min-h-screen bg-[var(--bg-main)]">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-primary flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                ChinaHub
+            </a>
+            <div class="hidden xl:flex xl:space-x-6 items-center font-medium text-[var(--text-secondary)] text-base whitespace-nowrap">
+                <a href="visa-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Visa Guide</a>
+                <a href="payment-apps.html" class="hover:text-[var(--primary-main)] transition-colors">Payments & Apps</a>
+                <a href="vpn-internet.html" class="hover:text-[var(--primary-main)] transition-colors">Internet & VPN</a>
+                <a href="about.html" class="hover:text-[var(--primary-main)] transition-colors">Culture</a>
+                <a href="survival-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Survival Guide</a>
+                <a href="faq.html" class="hover:text-[var(--primary-main)] transition-colors">FAQ & Scams</a>
+                <a href="contact.html" class="hover:text-[var(--primary-main)] transition-colors">Contact</a>
+            </div>
+            <a href="visa-guide.html" class="hidden xl:block whitespace-nowrap bg-primary hover-bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold transition-colors">
+                Plan Your Trip
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="relative group ml-4 hidden xl:block">
+                <button class="flex items-center gap-1 text-[var(--text-secondary)] hover:text-primary transition-colors font-bold tracking-wide">
+                    🌐 EN <span class="text-xs">▼</span>
+                </button>
+                <div class="absolute right-0 mt-4 w-36 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all pt-2 pb-2">
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇬🇧 English</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇪🇸 Español</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇫🇷 Français</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇨🇳 中文</a>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="xl:hidden text-2xl text-[var(--text-primary)] relative z-50 transition-colors w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-3xl hidden flex-col pt-28 px-6 xl:hidden overflow-y-auto pb-12 transition-all">
+        <div class="flex flex-col gap-6 reveal-up">
+            <a href="visa-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Visa Guide</a>
+            <a href="payment-apps.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Payments & Apps</a>
+            <a href="vpn-internet.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Internet & VPN</a>
+            <a href="about.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Culture</a>
+            <a href="survival-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Survival Guide</a>
+            <a href="faq.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">FAQ & Scams</a>
+            <a href="contact.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] min-h-[500px] flex items-center justify-center pt-20">
+        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop" alt="Great Wall" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute inset-0 bg-gradient-to-r from-stone-950/90 via-stone-900/70 to-transparent"></div>
+        <div class="relative z-10 text-left px-4 md:px-6 max-w-5xl mx-auto w-full">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/20 backdrop-blur-md text-white text-sm font-semibold uppercase mb-6">
+                UNESCO
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg font-serif">
+                World Heritage Sites of <span class="text-amber-400">China</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 max-w-2xl drop-shadow">
+                Discover China's 56 incredible World Heritage Sites.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16 flex-grow">
+        
+        <!-- Introduction -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-[var(--text-primary)] mb-4 font-serif">56 Sites, 1 Civilization</h2>
+                <p class="text-[var(--text-secondary)] text-lg max-w-3xl mx-auto">
+                    China has the second-most UNESCO World Heritage Sites in the world, with sites showcasing both cultural and natural wonders.
+                </p>
+            </div>
+        </section>
+
+        <!-- Major Heritage Sites -->
+        <section class="mb-20">
+            <h3 class="text-3xl font-bold text-[var(--text-primary)] mb-10 font-serif text-center">Must-Visit Sites</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Great Wall -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-5xl">🧱</div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-[var(--text-primary)] mb-3">Great Wall of China</h4>
+                        <p class="text-[var(--text-secondary)] text-sm mb-4">The most famous site - 21,196 km long! One of the Seven Wonders of the World.</p>
+                    </div>
+                </div>
+
+                <!-- Forbidden City -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-red-700 to-orange-800 flex items-center justify-center text-5xl">🏯</div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-[var(--text-primary)] mb-3">Forbidden City</h4>
+                        <p class="text-[var(--text-secondary)] text-sm mb-4">Imperial palace of China's last two dynasties. 980 buildings spanning 72 hectares.</p>
+                    </div>
+                </div>
+
+                <!-- Terracotta Warriors -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center text-5xl">🗿</div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-[var(--text-primary)] mb-3">Terracotta Warriors</h4>
+                        <p class="text-[var(--text-secondary)] text-sm mb-4">8,000 life-sized soldiers, horses, and chariots buried with the first Qin Emperor.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--text-primary)] text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <div class="text-2xl font-extrabold mb-4 flex items-center justify-center gap-2">
+                    <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center text-lg">C</div>
+                    ChinaHub.travel
+                </div>
+                <p class="text-gray-400 text-sm max-w-md mx-auto mb-6">
+                    Your complete guide to traveling in China.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400 mb-8">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="visa-guide.html" class="hover:text-white transition-colors">Visa Guide</a>
+                    <a href="about.html" class="hover:text-white transition-colors">Culture</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+                <div class="border-t border-gray-700 pt-6 text-sm text-gray-500">
+                    <p>© 2026 ChinaHub.travel - All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese History & Dynasties Guide | ChinaHub.travel</title>
+    <meta name="description" content="Explore 5000 years of Chinese history, from ancient dynasties to the modern era, and discover China's rich cultural heritage.">
+    <link rel="canonical" href="https://chinahub.travel/history.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1289715571389865" crossorigin="anonymous"></script>
+
+    </head>
+<body class="antialiased flex flex-col min-h-screen bg-[var(--bg-main)]">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-primary flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-lg">C</div>
+                ChinaHub
+            </a>
+            <div class="hidden xl:flex xl:space-x-6 items-center font-medium text-[var(--text-secondary)] text-base whitespace-nowrap">
+                <a href="visa-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Visa Guide</a>
+                <a href="payment-apps.html" class="hover:text-[var(--primary-main)] transition-colors">Payments & Apps</a>
+                <a href="vpn-internet.html" class="hover:text-[var(--primary-main)] transition-colors">Internet & VPN</a>
+                <a href="about.html" class="hover:text-[var(--primary-main)] transition-colors">Culture</a>
+                <a href="survival-guide.html" class="hover:text-[var(--primary-main)] transition-colors">Survival Guide</a>
+                <a href="faq.html" class="hover:text-[var(--primary-main)] transition-colors">FAQ & Scams</a>
+                <a href="contact.html" class="hover:text-[var(--primary-main)] transition-colors">Contact</a>
+            </div>
+            <a href="visa-guide.html" class="hidden xl:block whitespace-nowrap bg-primary hover-bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold transition-colors">
+                Plan Your Trip
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="relative group ml-4 hidden xl:block">
+                <button class="flex items-center gap-1 text-[var(--text-secondary)] hover:text-primary transition-colors font-bold tracking-wide">
+                    🌐 EN <span class="text-xs">▼</span>
+                </button>
+                <div class="absolute right-0 mt-4 w-36 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all pt-2 pb-2">
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href=p" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇬🇧 English</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/es'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇪🇸 Español</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/fr'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇫🇷 Français</a>
+                    <a href="javascript:void(0)" onclick="let p=window.location.pathname.replace(/^\/(es|fr|zh)(\/|$)/, '/'); window.location.href='/zh'+(p==='/'?'/':p)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary font-medium flex items-center gap-2">🇨🇳 中文</a>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="xl:hidden text-2xl text-[var(--text-primary)] relative z-50 transition-colors w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-3xl hidden flex-col pt-28 px-6 xl:hidden overflow-y-auto pb-12 transition-all">
+        <div class="flex flex-col gap-6 reveal-up">
+            <a href="visa-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Visa Guide</a>
+            <a href="payment-apps.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Payments & Apps</a>
+            <a href="vpn-internet.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Internet & VPN</a>
+            <a href="about.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Culture</a>
+            <a href="survival-guide.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Survival Guide</a>
+            <a href="faq.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">FAQ & Scams</a>
+            <a href="contact.html" class="block border-b border-gray-100/50 pb-4 text-2xl font-extrabold text-[var(--text-primary)] hover:text-primary transition-colors tracking-tight">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] min-h-[500px] flex items-center justify-center pt-20">
+        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop" alt="Great Wall of China" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-950 via-stone-900/80 to-transparent"></div>
+        <div class="relative z-10 text-left px-4 md:px-6 max-w-5xl mx-auto w-full">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/20 backdrop-blur-md text-white text-sm font-semibold uppercase mb-6">
+                5000 Years
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg font-serif">
+                The Rise and Fall of <span class="text-amber-400">Dynasties</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 max-w-2xl drop-shadow">
+                Journey through China's rich history, from ancient emperors to modern times.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16 flex-grow">
+        
+        <!-- Introduction -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-[var(--text-primary)] mb-4 font-serif">A Civilization Unbroken</h2>
+                <p class="text-[var(--text-secondary)] text-lg max-w-3xl mx-auto">
+                    China is one of the world's oldest civilizations, with a continuous history spanning thousands of years.
+                </p>
+            </div>
+        </section>
+
+        <!-- Timeline of Major Dynasties -->
+        <section class="mb-20">
+            <h3 class="text-3xl font-bold text-[var(--text-primary)] mb-10 font-serif text-center">Major Dynasties</h3>
+            <div class="space-y-8">
+                
+                <!-- Shang Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            1600-1046 BC
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Shang Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">The first historically confirmed dynasty, known for bronze casting, oracle bone inscriptions, and the development of early Chinese writing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zhou Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-stone-400 to-stone-600 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            1046-256 BC
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Zhou Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">The longest-lasting dynasty, during which Confucianism, Taoism, and Legalism were developed. Also famous for the Spring and Autumn, and Warring States periods.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qin Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-stone-600 to-gray-800 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            221-206 BC
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Qin Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">The first imperial dynasty, known for unifying China, building the Great Wall, and creating the Terracotta Army. The word "China" comes from this dynasty.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Han Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-red-600 to-red-800 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            206 BC-220 AD
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Han Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">A golden age of Chinese civilization, known for opening the Silk Road, inventing paper, and establishing China's territories that are still influential today.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tang Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-amber-500 to-amber-700 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            618-907
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Tang Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">A high point in Chinese culture and art, known for poetry, Buddhism, and the cosmopolitan capital Chang'an. Poetry flourished with Li Bai and Du Fu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Song Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            960-1279
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Song Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">Known for innovations in technology, including gunpowder, compass, and printing. An era of economic prosperity and Neo-Confucian philosophy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ming Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-700 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            1368-1644
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Ming Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">Known for restoring Chinese rule, building the Forbidden City, expanding the Great Wall, and Zheng He's famous treasure voyages to the Western Seas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qing Dynasty -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-amber-700 to-yellow-900 rounded-xl flex items-center justify-center text-3xl font-bold text-white">
+                            1644-1912
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-2xl font-bold text-[var(--text-primary)] mb-3">Qing Dynasty</h4>
+                            <p class="text-[var(--text-secondary)] text-sm mb-4">The last imperial dynasty, known for expanding China's territory, but also marked by conflicts with Western powers and eventual decline.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--text-primary)] text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <div class="text-2xl font-extrabold mb-4 flex items-center justify-center gap-2">
+                    <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center text-lg">C</div>
+                    ChinaHub.travel
+                </div>
+                <p class="text-gray-400 text-sm max-w-md mx-auto mb-6">
+                    Your complete guide to traveling in China.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400 mb-8">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="visa-guide.html" class="hover:text-white transition-colors">Visa Guide</a>
+                    <a href="about.html" class="hover:text-white transition-colors">Culture</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+                <div class="border-t border-gray-700 pt-6 text-sm text-gray-500">
+                    <p>© 2026 ChinaHub.travel - All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
