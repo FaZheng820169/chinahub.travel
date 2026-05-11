@@ -1,0 +1,3 @@
+# ChinaHub.travel - ads.txt
+google.com, pub-1289715571389865, DIRECT, f08c47fec0942fa0
+contact@chinahub.travel
