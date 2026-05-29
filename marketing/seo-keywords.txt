@@ -1,0 +1,35 @@
+# High-Value SEO Keywords for Future Content
+# Format: Keyword | Monthly Search Volume (est.) | Difficulty
+
+## Tier 1: High Volume, High Intent (target with pillar content)
+1. "china visa for us citizens" | 12,000/mo | Medium
+2. "do i need a visa for china" | 18,000/mo | High
+3. "best vpn for china 2026" | 8,500/mo | Medium
+4. "china travel guide" | 60,000/mo | Very High
+5. "how to use alipay as foreigner" | 5,400/mo | Low
+6. "144 hour transit visa china" | 6,800/mo | Medium
+
+## Tier 2: Medium Volume, Low Competition (quick wins)
+7. "does whatsapp work in china" | 4,200/mo | Low
+8. "china esim vs vpn" | 1,800/mo | Low
+9. "china high speed train guide" | 3,100/mo | Low
+10. "is shanghai safe for tourists" | 2,900/mo | Low
+11. "china travel checklist 2026" | 1,500/mo | Very Low
+12. "can foreigners use wechat pay" | 3,800/mo | Low
+13. "best time to visit china" | 9,000/mo | Medium
+
+## Tier 3: Long Tail (easy wins for blog posts)
+14. "how to get from shanghai to hangzhou by train" | 800/mo | Very Low
+15. "beijing 3 day itinerary 2026" | 1,200/mo | Low
+16. "best esim for china travel" | 2,100/mo | Low
+17. "china food guide for foreigners" | 1,600/mo | Low
+18. "whats blocked in china 2026" | 2,500/mo | Low
+19. "china travel tips first time" | 3,300/mo | Medium
+20. "do i need cash in china" | 1,400/mo | Very Low
+
+## Next Content Ideas (match keywords to new pages):
+- "china visa for [country]" pages (US, UK, Canada, Australia, India)
+- "is [city] worth visiting" pages (6 cities)
+- "china vs japan travel" comparison
+- "china travel budget breakdown"
+- Monthly VPN testing update page (high repeat traffic)

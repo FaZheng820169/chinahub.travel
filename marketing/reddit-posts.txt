@@ -1,0 +1,125 @@
+# Reddit Marketing Posts for ChinaHub.travel
+# Copy-paste these to relevant subreddits. Wait 1-2 days between posts.
+# Always engage genuinely — answer questions, don't just drop links.
+
+================================================================================
+POST 1: r/travel — "Just got back from China — here's what nobody tells you"
+================================================================================
+
+Title: Just spent 3 weeks in China as a first-timer — here's the stuff guidebooks don't cover
+
+Just got back from Shanghai, Beijing, and Chengdu. I read all the usual guides but there were some things I wish someone had told me:
+
+1. **Cash is dead.** I took out ¥2000 from an ATM on day 1. Three weeks later I still had ¥1800. Everything — street food, temple tickets, even a guy selling roasted chestnuts from a cart — is QR code only. Set up Alipay before you go.
+
+2. **The VPN thing is real.** I figured "how bad could it be?" Answer: bad. WhatsApp, Instagram, Google Maps, Gmail — all gone the moment you disconnect from airport WiFi. ExpressVPN worked for me but I had to install it BEFORE arriving (Chinese app stores block VPN apps).
+
+3. **Didn't need to speak Chinese.** Google Translate's camera mode handled menus, and pointing + smiling got me through 90% of interactions. Learning "ni hao" (hello) and "xie xie" (thank you) goes a long way.
+
+4. **High-speed rail is incredible.** Beijing to Shanghai in 4.5 hours, smooth as glass, cheaper than flying. Book 2 weeks ahead on Trip.com.
+
+I put together everything I learned into a guide at chinahub.travel — it covers the visa stuff (144-hour transit is way easier than I thought), setting up payments, and which VPNs actually work right now. Happy to answer questions about any of this!
+
+================================================================================
+POST 2: r/digitalnomad — "Working remotely from China — connectivity guide"
+================================================================================
+
+Title: Remote work from China: what actually works for connectivity (tested May 2026)
+
+Spent a month working remotely from Shanghai and Chengdu. For anyone considering it, here's the connectivity reality:
+
+**What's blocked (2026):**
+- Google (all services), WhatsApp, Instagram, Facebook, Twitter/X, YouTube, Dropbox, Slack (intermittent), Discord, ChatGPT, Claude
+
+**What works without VPN:**
+- Microsoft 365/Teams, Zoom, LinkedIn, WeChat (obviously), Apple iMessage
+
+**My setup that actually worked:**
+- ExpressVPN on laptop + phone (the "Lightway" protocol is key — standard OpenVPN gets detected)
+- Airalo eSIM for backup data (unblocks most things without VPN since it routes through Hong Kong)
+- Local SIM for everyday stuff (China Unicom, ¥88/month for 30GB)
+
+The big surprise: internet speeds are fantastic. I was getting 200+ Mbps on hotel WiFi. The VPN overhead is minimal with the right protocol.
+
+One thing I didn't expect: you need a Chinese phone number for EVERYTHING. WiFi logins at cafes send SMS codes. Food delivery apps require phone verification. Get a local SIM at the airport on day 1.
+
+I wrote up the full connectivity guide at chinahub.travel/internet-vpn with current recommendations — the VPN situation changes fast so most blog posts from 2024 are outdated.
+
+================================================================================
+POST 3: r/solotravel — "Solo in China as someone who speaks zero Mandarin"
+================================================================================
+
+Title: Solo traveling China with zero Chinese — it was way easier than I expected
+
+Just finished 2 weeks solo in China (Beijing → Xi'an → Chengdu → Shanghai). I speak exactly two words of Mandarin. Here's how it went:
+
+**The scary parts that weren't actually scary:**
+- Getting lost? Metro systems have English signs everywhere, and Didi (Chinese Uber) has an English interface
+- Ordering food? Point at pictures or use Google Translate camera. Worst case you get something unexpected, which is half the fun
+- Police checks? Never happened. Carried my passport, no one asked for it except at hotels and train stations
+
+**What actually was hard:**
+- Buying train tickets at the station (just book online)
+- Finding vegetarian food outside big cities (meat is in everything)
+- Public toilets (carry your own TP and hand sanitizer — trust me)
+
+**Safety:** Felt safer walking alone at midnight in Shanghai than I do in most European cities. Zero harassment, zero sketchy situations. The biggest danger is probably crossing the street (e-bikes come from everywhere).
+
+I compiled everything I learned at chinahub.travel — the survival guide section saved me multiple times (especially the police registration tip that I would have completely missed).
+
+================================================================================
+POST 4: r/China — "144-hour transit visa — my experience (May 2026)"
+================================================================================
+
+Title: PSA: The 144-hour transit visa is still working great — here's my recent experience
+
+Saw some confusion about this so wanted to share my experience from last week:
+
+**My route:** London → Shanghai (6 days) → Tokyo
+
+**What happened at immigration:**
+1. Filled out the blue arrival card on the plane (standard)
+2. At immigration, there's a dedicated "24/144-hour transit" counter
+3. Officer asked to see my onward ticket to Tokyo. I had it printed + on my phone
+4. They took a photo and fingerprints, stamped a temporary entry permit in my passport
+5. Whole process: 15 minutes
+
+**What I could do:**
+- Moved freely around Shanghai + took the train to Hangzhou for a day trip
+- Stayed in regular hotels (not restricted to certain ones)
+- Used Alipay linked to my UK card everywhere
+- Took domestic flights? NO — transit visa is for the arrival city's administrative region only (Shanghai, Jiangsu, Zhejiang). You can't fly to Beijing on it.
+
+**Key requirement people miss:** You MUST be going A → China → B (three different places). London → Shanghai → London does NOT qualify. Hong Kong counts as "B" though.
+
+Full breakdown of which countries qualify and which ports accept it at chinahub.travel/visa-guide — they keep it updated for 2026 policies.
+
+================================================================================
+POST 5: r/travel — answering a common question
+================================================================================
+
+[Use this when you see someone asking "Should I visit China?" or "Is China safe?"]
+
+I was in the same boat last year — China wasn't on my radar at all. What changed my mind:
+
+- It's incredibly cheap right now compared to Japan/Korea. Nice hotels for $40-60/night, amazing meals for $3-5
+- The contrast between ancient and modern is wild — you can walk from a 600-year-old temple straight into a neon-lit shopping district
+- The food variety is insane. Chinese food in the West is like 5% of what's actually available
+- Infrastructure is better than most Western countries — bullet trains, spotless metro systems, everything runs on time
+
+Biggest barrier is the preparation: visa (or use the 144-hour transit), payment apps, VPN. But once that's sorted, the actual travel is smooth.
+
+chinahub.travel was helpful for me — it's specifically written for first-time visitors and covers all the pre-trip setup stuff that most travel blogs skip.
+
+================================================================================
+WHEN TO POST (best engagement times, US Eastern):
+- r/travel: Tue/Wed/Thu, 8-10am EST
+- r/digitalnomad: Mon-Thu, 7-9am EST  
+- r/solotravel: Wed/Fri, 9-11am EST
+- r/China: Any day, 8-10pm EST (China morning time)
+
+RULES:
+- Don't just drop links — engage in the comments
+- Answer other people's questions in the thread
+- Wait at least 48 hours between posts
+- If a post gets removed, message the mods politely

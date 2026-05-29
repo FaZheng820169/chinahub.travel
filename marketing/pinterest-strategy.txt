@@ -1,0 +1,39 @@
+# Pinterest Marketing Strategy for ChinaHub.travel
+# Pinterest is the #2 traffic source for travel blogs after Google
+
+## Pin Types to Create (use Canva, free):
+
+### For Each Article, Create:
+1. **Main Pin** (1000x1500px) — Title + one key stat/fact
+   Example: "China Visa Guide 2026 | 53 Countries Can Enter Visa-Free"
+   
+2. **List Pin** (1000x2100px) — Numbered list from article
+   Example: "7 Apps You MUST Download Before Visiting China"
+
+3. **Infographic Pin** (1000x3000px) — Step-by-step visual
+   Example: Visual timeline of Alipay setup process
+
+### Best Boards to Create:
+- "China Travel Tips" — general tips and guides
+- "China Itineraries" — city guides, day plans
+- "China Travel Prep" — visa, payments, packing
+- "China Food Guide" — food articles
+
+### Posting Schedule:
+- 5-10 pins per day (use Tailwind or schedule manually)
+- Best times: 8-11pm EST (US evening), weekends
+- Join group boards about Asia travel, budget travel
+
+### Pin Description Template:
+"[Main benefit] | [Specific detail] | Click for the full guide → chinahub.travel"
+
+Example:
+"Everything you need to know about China visas in 2026 — 144-hour transit rules, L visa costs, and which of the 53 eligible countries can visit visa-free | Full step-by-step guide → chinahub.travel/visa-guide"
+
+### Keywords to Use in Pin Titles:
+- "China travel 2026"
+- "China travel guide"
+- "China tips"
+- "Visit China"
+- "China itinerary"
+- "China on a budget"
