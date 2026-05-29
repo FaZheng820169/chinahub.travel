@@ -1,0 +1,92 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/visa-guide",
+      "destination": "/visa-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/payment-apps",
+      "destination": "/payment-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/vpn-internet",
+      "destination": "/vpn-internet.html",
+      "permanent": true
+    },
+    {
+      "source": "/survival-guide",
+      "destination": "/survival-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/transport-guide",
+      "destination": "/transport-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/china-esim-vs-vpn",
+      "destination": "/china-esim-vs-vpn.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-time-to-visit-china",
+      "destination": "/best-time-to-visit-china.html",
+      "permanent": true
+    },
+    {
+      "source": "/china-train-travel-guide",
+      "destination": "/china-train-travel-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/china-travel-checklist",
+      "destination": "/china-travel-checklist.html",
+      "permanent": true
+    },
+    {
+      "source": "/alipay-wechat-pay-guide",
+      "destination": "/alipay-wechat-pay-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/esim-china-guide",
+      "destination": "/esim-china-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/144-hour-transit-visa",
+      "destination": "/144-hour-transit-visa.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
